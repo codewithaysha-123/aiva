@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+
+<style>
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:url("https://orbograph.com/wp-content/uploads/2021/01/healthcare-ai-gif.gif");
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center center;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    height: 500px;
+    width: 300px; background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhzek2cPx-IFS6ps0E9AFYxfBkDqC6-PnLug&usqp=CAU");
+    background-size:112%;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Forum', cursive;
+    color:#000;
+    font-weight: 600;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center center;
+}
+
+.container h1 {
+    padding: 30px;
+    color:#fff;
+    font-family: 'Montez', cursive;
+    font-size: 50px;
+}
+
+#txt {
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.3), inset -4px -4px 10px 0 rgba(255, 255, 255, 0.4);
+    background-color: #ffa502;
+    color: rgb(54, 52, 26);
+}
+
+#txt:focus {
+    outline: none;
+}
+
+#txt::placeholder {
+    color: rgb(33, 44, 48);
+}
+
+.or {
+    padding: 20px;
+}
+
+.signup {
+    margin-bottom: 15px;
+    color:#fff;
+}
+
+.icons {
+    margin-left: 8px;
+}
+
+.icons i {
+    margin-right: 10px;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color:#1aff1a;
+}
+
+
+p a {
+    text-decoration: none;
+    color:#fff;
+}
+
+
+
+
+
+
+
+.start{
+    border-radius: 3px;
+    width: 100px;
+    padding: 10px 0;
+   background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqLdwRNMh8ZvIxEoEUGCshyL8HzwzqQJ-FwbwNmihzNKLDDcy4KDgk3A&s=10");
+    background-size:100%;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: .8em;
+    text-transform: uppercase;
+    margin: 20px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition-duration: 0.2s;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition-duration: .5s;
+    font-family: 'Roboto';
+}
+
+.start:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+   z-index: -2;
+    height: 100%;
+    width: 0;
+    background-size:100%;
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkP2TX2kMw1PiX_HJ7ianlDhq0pOuxm8v461t693cheG7sc_AbEUazFtI&s=10");
+    transition-duration: 0.5s;
+    -webkit-transition-duration: .5s;
+}
+
+.start:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    background-size:100%; background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkP2TX2kMw1PiX_HJ7ianlDhq0pOuxm8v461t693cheG7sc_AbEUazFtI&s=10");
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+}
+
+.start:hover:after, .start:hover:before {
+    width:100%;
+}
+
+
+#startpage{
+    display:none;
+}
+
+
+.ruleol {
+    position:absolute;
+    display:fixed;
+    height:515px;
+    width:300px;
+   background-color:#fff;
+   align-items:justify;
+   border-radius:5px;
+   top:-1px; background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIT6HFnilCjz0r_cXZHdfpg3rO69irqGNqA&usqp=CAU");
+   color:#fff;
+   background-attachment:fixed;
+    background-size:cover;
+    background-position:center center;
+    overflow:scroll;
+   text-transform:capitalize;
+
+
+}
+
+h2::first-letter {
+  font-size: 200%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><br>AIVA</h1>
+        <div class="start">
+        <p ><a href="aivast.html">START</a>
+        </p>
+
+            </div>
+
+
+            <div class="start" onclick="document.getElementById('rulepage').style.display='block'">
+
+            RULES
+            </div>
+
+
+        <div class="form-group">
+        <p class="signup">F O R U M   |    A B O U T </p>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/aysha-simra-088539224">  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+            <a href="https://www.instagram.com/ferrocious_scrutiny/?hl=en">  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+         <b href="https://m.facebook.com/100073973003090/"> <i class="fa fa-facebook-square" aria-hidden="true"></i><a/>
+<br>
+
+       <h2 style="color:#ADD8E6"><b>💦Aysha Simra💦</b></h2>
+
+          <div class="ruleol" id="rulepage"style="display:none;">
+
+          <br>
+
+            <h5>
+1. "open/close Command Prompt" or "open/close cmd"<br>
+2. "open/close Note Pad"<br>
+3. "open/close Calculator"<br>
+4. "YouTube pause/resume/full screen/film screen/<br>
+                skip/back/increase/decrease/previous/next/search/<br>
+                mute/unmute"<br>
+5. "open/close Camera "<br>
+6. "IP Address"<br>
+7. "Chrome new tab/close tab/new window/history<br>
+/downloads/bookmark/incognito/switch tab/open/home<br>
+/close current tab/close current window/minimize current window<br>
+/maximize current window/exit"<br>
+8. "Send Email" for Emails without attachment<br>
+9. "Send File" for Emails with attachment <br>
+10. "Google Search" with pictures Automatically Download <br>
+11. "Whatsapp Message"<br>
+12. "Whatsapp Call"<br>
+13. "whatsapp Video Call"<br>
+14. "Make Call" for general calls <br>
+15. "Send SMS" for general messages <br>
+16. "Play" plays some videos from Youtube <br>
+17. "You can sleep now" the app will still listen and recognize but cannot take any action<br>
+18. "Switch the window" for switching between multiple windows<br>
+19. "Tell me a news"<br>
+20. "Set alarm"<br>
+21. "Tell me joke" tells 3 jokes at a time<br>
+22. "Shutdown the system" <br>
+23. "Restart the system" <br>
+24. "Sleep the system" <br>
+25. "Logout from pc"<br>
+26. "Covid cases" or "Corona cases" <br>
+27. "Where i am" for  Current location <br>
+28. "Temperature"<br>
+29. "Battery" or "Power"<br>
+30. "Internet speed"<br>
+31. "Instagram/insta profile"<br>
+30. "Screen recording"<br>
+31. "PDF to docx converter"<br>
+32. "docx to PDF converter"<br>
+33. "PDF to pptx converter"<br>
+34. "pptx to PDF Converter"<br>
+35. "Excel to doc Convertor" <br>
+36. "Docx to excel converter"<br>
+37. "calculate" for basic Math Calculations <br>
+38. "take a Screen Shot" <br>
+39. "Read PDF" <br>
+40. "Hide files/folder" or "visible to everyone" <br>
+41. "make notes" Convert speech to text (dictation) <br>
+42. "Convert image to text" (ocr) <br>
+43. "nasa" for NASA Information<br>
+44. "Translator hindi/kannada/tamil/telugu/arabic<br>
+45. "windows home screen/minimize/show start/open setting/open search/screenshot/restore windows" for automating windows
+46. "remember that" to make some note on daily task
+47. "what do you remember" for getting the info of daily task
+48. "where is" to locate distance between 2 places
+            </h5>
+
+
+<div class="start" onclick="document.getElementById('rulepage').style.display='none'">
+              QUIT
+            </div>
+
+</div>
+
+
+
+
+
+ <!--  <script>
+         function startbtn() {
+  var x = document.getElementById("startpage");
+
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+     </script>    -->
+
+</body>
+</html>
