@@ -1,4 +1,4 @@
-import datetime
+import datetime as datetime
 import sys
 from datetime import datetime
 import re
@@ -33,8 +33,8 @@ from nasa import *
 
 # to wish
 def wishMe():
-    hour = int(datetime.now().hour)
-    now = datetime.now()
+    hour = int(datetime.datetime.now().hour)
+    now = datetime.datetime.now()
     time = now.strftime("%H:%M:%S")
     if hour >= 0 and hour <= 12:
         speak(f"Good Morning! it's {time}")
@@ -47,7 +47,7 @@ def wishMe():
 
 def TaskExe():
     toast = ToastNotifier()
-    toast.show_toast("AIVA ","The AIVA is Now Activated!!!",duration=3)
+    toast.show_toast("AIVA ","The AIVA is Now Activated!!!",duration=5)
     pyautogui.press('esc')
 
     wishMe()
@@ -69,7 +69,7 @@ def TaskExe():
                 speak("Ok ma'am, closing command prompt")
                 os.system("TASKKILL /F /IM cmd.exe")
 
-        elif 'hello' in query:
+        elif 'hello' or 'hi' in query:
             speak("Hello ma'am, may i help you with something...")
 
         elif 'how are you' in query:
@@ -250,9 +250,8 @@ def TaskExe():
         elif 'tell me a joke' in query:
             speak("Ok ma'am please wait searching the jokes to say...")
             jokes = pyjokes.get_jokes(language='en', category='neutral')
-            for i in range(10):
-                i + 3, ".", jokes[i]
-                speak(jokes[i])
+            random.choice(jokes)
+            speak(jokes)
 
         elif 'shutdown the system' in query:
             speak("Ok ma'am. shutting down the system.")
@@ -348,7 +347,7 @@ def TaskExe():
 if __name__ == "__main__":
 
     recognizer = cv2.face.LBPHFaceRecognizer_create()  # Local Binary Patterns Histograms
-    recognizer.read('face recognition/trainer/trainer.yml')  # load trained model
+    recognizer.read('trainer/trainer.yml')  # load trained model
     cascadePath = 'haarcascade_frontalface_default.xml'
     faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + cascadePath)  # initializing haar cascade for object detection approach
 
@@ -397,7 +396,7 @@ if __name__ == "__main__":
                 elif 'goodbye' in permission:
                     speak("Thanks for Using Me Ma'am, have a great day...")
                     toast = ToastNotifier()
-                    toast.show_toast("Aiva", "The Aiva is Now Deactivated!!!", duration=3)
+                    toast.show_toast("Aiva", "The Aiva is Now Deactivated!!!", duration=5)
                     sys.exit()
 
             else:

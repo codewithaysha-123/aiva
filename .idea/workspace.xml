@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2f4211a-c9e9-4fbc-81b6-d4503f8fc1eb" name="Changes" comment="" />
+    <list default="true" id="e2f4211a-c9e9-4fbc-81b6-d4503f8fc1eb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiva.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiva.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aivaui.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivaui.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news.py" beforeDir="false" afterPath="$PROJECT_DIR$/news.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +45,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Aysha Simra/PycharmProject/aiva/Face Recognition&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -55,7 +60,7 @@
       <recent name="C:\Users\Aysha Simra\PycharmProject\jarvis\trainer" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.aiva ">
     <configuration name="Model Trainer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,7 +104,7 @@
       <method v="2" />
     </configuration>
     <configuration name="aiva " type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Aiva" />
+      <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
