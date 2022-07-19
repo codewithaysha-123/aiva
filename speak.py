@@ -4,9 +4,9 @@ from googletrans import Translator
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice',voices[1].id)
+engine.setProperty('voice', voices[1].id)
 
-#text to speech
+# text to speech
 def speak(audio):
     engine.say(audio)
     print(audio)
@@ -51,7 +51,7 @@ def transhin():
     speak("Ma'am, Tell me the line!!")
     line = takeHindi()
     translate = Translator()
-    result = translate.translate(line ,src='hi', dest='en')
+    result = translate.translate(line, src='hi', dest='en')
     Text = result.text
     speak(f"Ma'am, Translation for this line {Text}")
 
@@ -76,7 +76,7 @@ def transkann():
     speak("Ma'am, Tell me the line!!")
     line = takeKannada()
     translate = Translator()
-    result = translate.translate(line ,src='kn' ,dest='en')
+    result = translate.translate(line, src='kn', dest='en')
     Text = result.text
     speak(f"Ma'am, Translation for this line {Text}")
 
@@ -101,7 +101,7 @@ def tranTamil():
     speak("Ma'am, Tell me the line!!")
     line = takeTamil()
     translate = Translator()
-    result = translate.translate(line ,src='ta',dest='en')
+    result = translate.translate(line, src='ta', dest='en')
     Text = result.text
     speak(f"Ma'am, Translation for this line {Text}")
 
@@ -151,8 +151,7 @@ def tranArabic():
     speak("Ma'am, Tell me the line!!")
     line = takeArabic()
     translate = Translator()
-    result = translate.translate(line ,src='ar' ,dest='en')
+    result = translate.translate(line, src='ar', dest='en')
     Text = result.text
     speak(f"Ma'am, Translation for this line {Text}")
-
 

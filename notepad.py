@@ -8,7 +8,7 @@ def Notepad():
     writes = takeCommand()
     time = int(datetime.now().strftime("%H:%M"))
     filename = str(time) + "-note.txt"
-    with open(filename,"w") as file:
+    with open(filename, "w") as file:
         file.write(writes)
 
     path_1 = "C:\\Users\\Aysha Simra\\PycharmProject\\aiva\\notes\\" + str(filename)

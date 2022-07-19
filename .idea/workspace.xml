@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e2f4211a-c9e9-4fbc-81b6-d4503f8fc1eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Face Recognition/Model Trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Face Recognition/Model Trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Face Recognition/Samole Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Face Recognition/Sample Generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiva.css" beforeDir="false" afterPath="$PROJECT_DIR$/aiva.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiva.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiva.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aivast.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivast.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aivaui.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivaui.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.py" beforeDir="false" afterPath="$PROJECT_DIR$/news.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notepad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendemail.py" beforeDir="false" afterPath="$PROJECT_DIR$/sendemail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speak.py" beforeDir="false" afterPath="$PROJECT_DIR$/speak.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,10 +195,10 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.aiva " />
       <item itemvalue="Python.Model Trainer" />
-      <item itemvalue="Python.pywintypes" />
       <item itemvalue="Python.Sample Generator" />
+      <item itemvalue="Python.aiva " />
+      <item itemvalue="Python.pywintypes" />
       <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
@@ -231,5 +237,21 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="jarvis 1.0&#10;&#10; Conflicts:&#10;&#9;.idea/inspectionProfiles/Project_Default.xml&#10;&#9;.idea/misc.xml&#10;&#9;.idea/modules.xml&#10;&#9;MyAlarm.py&#10;&#9;__pycache__/email.cpython-39.pyc&#10;&#9;chrome.py&#10;&#9;covid.py&#10;&#9;google.py&#10;&#9;hide.py&#10;&#9;loctemp.py&#10;&#9;twilllo.py&#10;&#9;youTube.py" />
     <option name="LAST_COMMIT_MESSAGE" value="jarvis 1.0&#10;&#10; Conflicts:&#10;&#9;.idea/inspectionProfiles/Project_Default.xml&#10;&#9;.idea/misc.xml&#10;&#9;.idea/modules.xml&#10;&#9;MyAlarm.py&#10;&#9;__pycache__/email.cpython-39.pyc&#10;&#9;chrome.py&#10;&#9;covid.py&#10;&#9;google.py&#10;&#9;hide.py&#10;&#9;loctemp.py&#10;&#9;twilllo.py&#10;&#9;youTube.py" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aiva.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aiva.py</url>
+          <line>267</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

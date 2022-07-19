@@ -1,8 +1,7 @@
-import datetime as datetime
 import sys
 from datetime import datetime
 import re
-from notes import *
+from notepad import *
 from speak import *
 from sendemail import *
 import pwinput
@@ -31,6 +30,7 @@ from doxc import *
 from excel import *
 from nasa import *
 
+
 # to wish
 def wishMe():
     hour = int(datetime.datetime.now().hour)
@@ -47,7 +47,7 @@ def wishMe():
 
 def TaskExe():
     toast = ToastNotifier()
-    toast.show_toast("AIVA ","The AIVA is Now Activated!!!",duration=5)
+    toast.show_toast("AIVA ", "The AIVA is Now Activated!!!", duration=5)
     pyautogui.press('esc')
 
     wishMe()
@@ -169,9 +169,9 @@ def TaskExe():
 
         elif 'wikipedia' in query:
             speak("Searching wikipedia...")
-            query = query.replace("aiva","")
+            query = query.replace("aiva", "")
             query = query.replace("wikipedia", "")
-            query = query.replace("search","")
+            query = query.replace("search", "")
             results = wikipedia.summary(query, sentences=2)
             speak("According to wikipedia...")
             speak(results)
@@ -273,7 +273,7 @@ def TaskExe():
             cases()
 
         elif 'where i am' in query:
-           myloc()
+            myloc()
 
         elif 'temperature' in query:
             temperature()
@@ -298,7 +298,7 @@ def TaskExe():
         elif 'pdf to docx converter' in query:
             pdf2docx()
 
-        elif 'doxc to pdf converter' in query:
+        elif 'docx to pdf converter' in query:
             doxc2pdf()
 
         elif 'pdf to pptx converter' in query:
@@ -327,13 +327,13 @@ def TaskExe():
             imagetext()
 
         elif 'where is' in query:
-            place = query.replace("where is","")
-            place = place.replace("aiva","")
+            place = query.replace("where is", "")
+            place = place.replace("aiva", "")
             GoogleMaps(place)
 
         elif 'windows' in query:
-            command = query.replace("windows","")
-            command = command.replace("aiva","")
+            command = query.replace("windows", "")
+            command = command.replace("aiva", "")
             windowsAuto(command)
 
         elif 'make notes' in query:
@@ -344,18 +344,20 @@ def TaskExe():
             body = takeCommand()
             summary(body)
 
+
 if __name__ == "__main__":
 
     recognizer = cv2.face.LBPHFaceRecognizer_create()  # Local Binary Patterns Histograms
     recognizer.read('trainer/trainer.yml')  # load trained model
     cascadePath = 'haarcascade_frontalface_default.xml'
-    faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + cascadePath)  # initializing haar cascade for object detection approach
+    faceCascade = cv2.CascadeClassifier(
+        cv2.data.haarcascades + cascadePath)  # initializing haar cascade for object detection approach
 
     font = cv2.FONT_HERSHEY_SIMPLEX  # denotes the font type
 
     id = 2  # number of persons you want to Recognize
 
-    names = ['', 'Hassan Sir','Aysha']  # names, leave first empty bcz counter starts from 0
+    names = ['', 'Hassan Sir', 'Aysha']  # names, leave first empty bcz counter starts from 0
 
     camer = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # cv2.CAP_DSHOW to remove warning
     camer.set(3, 640)  # set video FrameWidht
@@ -371,7 +373,8 @@ if __name__ == "__main__":
 
         ret, img = camer.read()  # read the frames using the above created object
 
-        converted_image = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)  # The function converts an input image from one color space to another
+        converted_image = cv2.cvtColor(img,
+                                       cv2.COLOR_BGR2GRAY)  # The function converts an input image from one color space to another
 
         faces = faceCascade.detectMultiScale(
             converted_image,
@@ -418,24 +421,3 @@ if __name__ == "__main__":
     print("Thanks for using this program, have a good day.")
     camer.release()
     cv2.destroyAllWindows()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
