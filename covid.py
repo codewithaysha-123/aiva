@@ -22,3 +22,6 @@ def cases():
     sp.speak(f'Total recovered: {total_recovered}')
 
     sp.speak("Here are the stats for COVID-19")
+
+if __name__ == "__main__":
+    cases()

@@ -5,19 +5,19 @@ import speak as sp
 from pywikihow import search_wikihow
 import os
 
-def GoogleSearch (term):
-    query = term.replace("aiva","")
-    query = query.replace("what is","")
-    query = query.replace("how to","")
-    query = query.replace("who is","")
-    query = query.replace("what do you mean by","")
-    query = query.replace(" ","")
+def GoogleSearch(term):
+    query = term.replace("aiva", "")
+    query = query.replace("what is", "")
+    query = query.replace("how to", "")
+    query = query.replace("who is", "")
+    query = query.replace("what do you mean by", "")
+    query = query.replace(" ", "")
     writeab = str(query)
 
-    oooooo = open("\\aiva\\Data.txt")
+    search = open("C:\\Users\\Aysha Simra\\PycharmProject\\aiva\\Data.txt", "w")
 
-    oooooo.write(writeab)
-    oooooo.close()
+    search.write(writeab)
+    search.close()
 
     Query = str(term)
 
@@ -29,20 +29,20 @@ def GoogleSearch (term):
         sp.speak(how_to_func[0].summary)
     else:
         pywhatkit.search(Query)
-        search = wikipedia.summary(Query,2)
+        search = wikipedia.summary(Query, 2)
         sp.speak(f"According to your Search: {search}")
 
 
 def GoogleImage():
-    oo = open('\\aiva\\Data.txt', 'rt')
+    oo = open('C:\\Users\\Aysha Simra\\PycharmProject\\aiva\\Data.txt', 'rt')
     query = str(oo.read())
     oo.close()
-    pppp = open('\\aiva\\Data.txt', 'r+')
+    pppp = open('C:\\Users\\Aysha Simra\\PycharmProject\\aiva\\Data.txt', 'r+')
     pppp.truncate(0)
     pppp.close()
 
-    webdriver = "C:\\Users\\Aysha Simra\\PycharmProject\\jarvis\\chromedriver.exe"
-    photos = "C:\\Users\\Aysha Simra\\PycharmProject\\jarvis\\google photos\\"
+    webdriver = "C:\\Users\\Aysha Simra\\PycharmProject\\aiva\\chromedriver.exe"
+    photos = "C:\\Users\\Aysha Simra\\PycharmProject\\aiva\\google photos\\"
 
     search_keys = [f'{query}']
     number = 10
@@ -56,5 +56,6 @@ def GoogleImage():
         image_search.save_images(image_url)
 
     os.startfile(photos)
+
 
 

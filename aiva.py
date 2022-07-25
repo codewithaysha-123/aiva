@@ -1,7 +1,7 @@
 import sys
 from datetime import datetime
 import re
-from notepad import *
+from dictate import Notepad
 from speak import *
 from sendemail import *
 import pwinput
@@ -33,8 +33,8 @@ from nasa import *
 
 # to wish
 def wishMe():
-    hour = int(datetime.datetime.now().hour)
-    now = datetime.datetime.now()
+    hour = int(datetime.now().hour)
+    now = datetime.now()
     time = now.strftime("%H:%M:%S")
     if hour >= 0 and hour <= 12:
         speak(f"Good Morning! it's {time}")
@@ -280,9 +280,6 @@ def TaskExe():
 
         elif 'battery' in query or 'power' in query:
             bat()
-
-        elif 'internet speed' in query:
-            intsp()
 
         elif 'instagram profile' in query or 'insta profile' in query:
             instadown()

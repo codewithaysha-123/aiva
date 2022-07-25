@@ -15,3 +15,5 @@ def hide():
 
     elif 'leave it' in condition or 'leave for now' in condition:
         sp.speak("Ok ma'am")
+
+

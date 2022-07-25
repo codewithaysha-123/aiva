@@ -1,9 +1,13 @@
 from docx2pdf import convert
-from speak import speak as sp
+from speak import speak
+
 def doxc2pdf():
-    sp.speak("Wait Ma'am, processing to convert!")
-    input = input("Enter correct path of file to convert:")
-    out = input.split(".")
+    speak("Wait Ma'am, processing to convert!")
+    name = input("Enter correct path of file to convert:")
+    out = name.split(".")
     output = out[0] + ".pdf"
-    convert(input,output)
-    sp.speak("Ma'am, file has been converted.")
+    convert(name, output)
+    speak("Ma'am, file has been converted.")
+
+
+

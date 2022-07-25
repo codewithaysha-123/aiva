@@ -1,6 +1,5 @@
 import speak as sp
 import psutil
-import speedtest as sts
 
 def bat():
     # To sense the battery percentage
@@ -17,16 +16,5 @@ def bat():
     else:
         sp.speak("We have very low power, please connect to charging the system will shutdown very soon")
 
-def intsp():
-    sp.speak("Wait Ma'am, Checking internet speed!!")
-
-    # Calling Speedtest function to know the speed of the internet
-    st = sts.Speedtest()
-
-    # Download Speed
-    dl = st.download()/(1024**2)
-
-    # Uploading Speed
-    up = st.upload()/(1024**2)
-
-    sp.speak(f"We have {dl} MB per second downloading speed and {up} MB per second uploading speed")
+if __name__ == "__main__":
+    bat()

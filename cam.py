@@ -3,7 +3,8 @@ import speak as sp
 import pyautogui
 import numpy as np
 import time
-from PIL import Image
+from pytesseract import Output
+from keyboard import press_and_release
 import pytesseract
 
 def camera():
@@ -25,44 +26,54 @@ def camera():
 def screen():
     sp.speak("Ma'am, please tell me the name for this screenshot file")
     name = sp.takeCommand()
-    sp.speak("Please ma'am hold the screen for few seconds, i am taking screenshot")
+    sp.speak("Please hold the screen for few seconds, I am taking screenshot")
     time.sleep(5)
     img = pyautogui.screenshot()
     img.save(f"{name}.png")
     sp.speak("I am done ma'am, the screenshot is saved in our main folder.")
 
 def recsc():
-    # Create VideoWriter Object
-    resolution = pyautogui.size()
-    codec = cv2.VideoWriter_fourcc(*"XVID")
-    filename = "Recording.avi"
-    fps = 60.0
-    out = cv2.VideoWriter(filename, codec, fps, resolution)
+    sp.speak("Ma'am, tell me the name for this recording!!")
+    name = sp.takeCommand()
+    SCREEN_SIZE = tuple(pyautogui.size())
+    resolution = (1920, 1080)
 
-    # Create Window to show live Recording
-    cv2.namedWindow("Live", cv2.WINDOW_NORMAL)
-    cv2.resizeWindow("Live", 480, 270)
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    out = cv2.VideoWriter(name + '.avi', fourcc, 20.0, (SCREEN_SIZE))
+    webcam = cv2.VideoCapture(0)
 
-    # Infinite loop for record screen
     while True:
+        # Capture the screen
         img = pyautogui.screenshot()
-        frame = np.array(img)
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        out.imshow("Live", frame)
-        if cv2.waitKey(1) == ord('q'):
+        # Convert the image into numpy array
+        img = np.array(img)
+        # Convert the color space from BGR to RGB
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        _, frame = webcam.read()
+        # Finding the width, height and shape of our webcam image
+        fr_height, fr_width, _ = frame.shape
+        # setting the width and height properties
+        img[0:fr_height, 0: fr_width, :] = frame[0:fr_height, 0: fr_width, :]
+        # cv2.imshow('frame', img)
+        # Write the frame into the file 'output.avi'
+        out.write(img)
+        # Press 'q' to quit
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            print("Recording Stopped")
             break
 
 def switwind():
     sp.speak("Ma'am, switching the windows...")
-    pyautogui.keyDown('alt')
-    pyautogui.keyUp('tab')
-    time.sleep(1)
-    pyautogui.keyUp('alt')
+    press_and_release('alt + tab')
 
 def imagetext():
-    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
-    image = input("Enter image path for conversion:")
-    img_1 = Image.open(image,'r')
-    text = pytesseract.image_to_string(img_1)
-    sp.speak(text)
+    sp.speak("ma'am, wait for processing the image!!")
+    image = input("Enter the image path: ")
+    img = cv2.imread(image)
 
+    d = pytesseract.image_to_data(img, output_type=Output.DICT)
+    sp.speak(d.keys())
+
+
+if __name__ == "__main__":
+    screen()

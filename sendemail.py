@@ -3,18 +3,6 @@ import smtplib
 import speak as sp
 import pwinput
 
-
-def sendEmail(to, content):
-    server = smtplib.SMTP("smtp.gmail.com")
-    server.ehlo()
-    server.starttls()
-    email = input("Enter your email: ")
-    password = pwinput.pwinput(prompt='Enter your password: ', mask='.')
-    server.login(email, password)
-    server.sendmail(email, to, content)
-    server.close()
-
-
 def sendFile():
     sender = input("Enter your email: ")
     password = pwinput.pwinput(prompt='Enter your password: ', mask='.')
@@ -32,3 +20,20 @@ def sendFile():
     yag = yagmail.SMTP(user=sender, password=password)
     # sending the email
     yag.send(to=receiver, cc=ccname, bcc=bccname, subject=sub, contents=body, attachments=filename)
+
+
+def sendEmail(to, content):
+    server = smtplib.SMTP("smtp.gmail.com")
+    server.ehlo()
+    server.starttls()
+    email = input("Enter your email: ")
+    password = pwinput.pwinput(prompt='Enter your password: ', mask='.')
+    server.login(email, password)
+    server.sendmail(email, to, content)
+    server.close()
+
+
+
+
+if __name__ == "__main__":
+    sendEmail()
