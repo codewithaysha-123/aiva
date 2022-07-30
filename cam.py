@@ -1,4 +1,6 @@
 import cv2
+from PIL import Image
+
 import speak as sp
 import pyautogui
 import numpy as np
@@ -10,18 +12,15 @@ import pytesseract
 def camera():
     sp.speak("Ok ma'am, Opening Camera")
     cap = cv2.VideoCapture(0)
-    # To read the captured video
-    ret, img = cap.read()
-    cv2.imshow('webcam', img)
-    query = sp.takeCommand()
-    if 'quit' in query:
-        sp.speak("Ok Ma'am,Closing Camera")
-        # the captured video is released
-        cv2.release()
-
-        # destroys all the windows
-        cv2.destroyAllwindows()
-
+    while True:
+        # To read the captured video
+        ret, img = cap.read()
+        cv2.imshow('webcam', img)
+        k = cv2.waitkey(50)
+        if k==27:
+            break
+    cap.release()
+    cv2.destroyAllWindows
 
 def screen():
     sp.speak("Ma'am, please tell me the name for this screenshot file")
@@ -68,12 +67,13 @@ def switwind():
 
 def imagetext():
     sp.speak("ma'am, wait for processing the image!!")
-    image = input("Enter the image path: ")
-    img = cv2.imread(image)
+    im = Image.open("image.jpg")
 
-    d = pytesseract.image_to_data(img, output_type=Output.DICT)
-    sp.speak(d.keys())
+    pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+
+    text = pytesseract.image_to_string(im, lang='eng')
+    sp.speak(text)
 
 
 if __name__ == "__main__":
-    screen()
+    imagetext()

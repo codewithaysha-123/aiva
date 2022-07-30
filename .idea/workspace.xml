@@ -5,51 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f4211a-c9e9-4fbc-81b6-d4503f8fc1eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.4.9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samples/face.5.9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assistant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i want test-note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.avi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aiva.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aiva.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Face Recognition/Model Trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model Trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Face Recognition/Sample Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample Generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Face Recognition/haarcascade_frontalface_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyAlarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyAlarm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiva.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiva.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aivast.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivast.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aivaui.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivaui.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cam.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/covid.py" beforeDir="false" afterPath="$PROJECT_DIR$/covid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxc.py" beforeDir="false" afterPath="$PROJECT_DIR$/doxc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictate.py" beforeDir="false" afterPath="$PROJECT_DIR$/dictate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google.py" beforeDir="false" afterPath="$PROJECT_DIR$/google.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hide.py" beforeDir="false" afterPath="$PROJECT_DIR$/hide.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insta.py" beforeDir="false" afterPath="$PROJECT_DIR$/insta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intbat.py" beforeDir="false" afterPath="$PROJECT_DIR$/intbat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loctemp.py" beforeDir="false" afterPath="$PROJECT_DIR$/loctemp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notepad.py" beforeDir="false" afterPath="$PROJECT_DIR$/dictate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nasa.py" beforeDir="false" afterPath="$PROJECT_DIR$/nasa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password.py" beforeDir="false" afterPath="$PROJECT_DIR$/password.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sendemail.py" beforeDir="false" afterPath="$PROJECT_DIR$/sendemail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/trainer.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twilllo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/windows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/youTube.py" beforeDir="false" afterPath="$PROJECT_DIR$/youTube.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,9 +66,17 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Aysha Simra/PycharmProject/aiva/Face Recognition&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="aiva" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="aiva" />
+      </console-settings>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aysha Simra\PycharmProject\aiva\Face Recognition" />
@@ -106,61 +91,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.aiva">
-    <configuration name="Model Trainer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model Trainer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Model Trainer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="aiva" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Face Recognition" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Aysha Simra\PycharmProject\aiva\Model Trainer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Sample Generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="aiva" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Face Recognition" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Aysha Simra\PycharmProject\aiva\Sample Generator.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,7 +119,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -190,19 +133,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="loctemp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/loctemp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dictate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="aiva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dictate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -232,21 +196,63 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="nasa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="aiva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nasa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="password" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="aiva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/password.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.Model Trainer (1)" />
-      <item itemvalue="Python.Sample Generator" />
-      <item itemvalue="Python.Model Trainer" />
       <item itemvalue="Python.aiva" />
-      <item itemvalue="Python.loctemp" />
+      <item itemvalue="Python.dictate" />
+      <item itemvalue="Python.nasa" />
+      <item itemvalue="Python.password" />
+      <item itemvalue="Python.cam" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.aiva" />
-        <item itemvalue="Python.Model Trainer (1)" />
-        <item itemvalue="Python.Model Trainer" />
-        <item itemvalue="Python.Sample Generator" />
-        <item itemvalue="Python.loctemp" />
+        <item itemvalue="Python.cam" />
+        <item itemvalue="Python.nasa" />
+        <item itemvalue="Python.password" />
+        <item itemvalue="Python.dictate" />
       </list>
     </recent_temporary>
   </component>
@@ -282,13 +288,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aiva.py</url>
-          <line>208</line>
+          <line>205</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aiva.py</url>
-          <line>267</line>
+          <line>258</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aiva.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aiva.py</url>
+          <line>250</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aiva.py</url>
+          <line>216</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -43,5 +43,4 @@ def calculate():
         speak("Your result is ")
         speak(eval_binary_expr(*(my_string.split())))
 
-if __name__ == "__main__":
-    calculate("5+3")
+

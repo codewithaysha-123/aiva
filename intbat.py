@@ -16,5 +16,3 @@ def bat():
     else:
         sp.speak("We have very low power, please connect to charging the system will shutdown very soon")
 
-if __name__ == "__main__":
-    bat()

@@ -31,3 +31,5 @@ def windowsAuto(command):
         speak.speak("Sorry, Ma'am No Command Found!")
 
 
+if __name__ == "__main__":
+    windowsAuto('show start')

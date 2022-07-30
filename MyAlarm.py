@@ -1,29 +1,18 @@
 import datetime
-import winsound
+import vlc
 import speak as sp
 
-
 def alarm(Timing):
-    altime = str(datetime.datetime.now().strptime(Timing,"%I:%M %p"))
-    altime = altime[24:-3]
-
-    Horeal = altime[:2]
-    Horeal = int(Horeal)
-
-    Mireal = altime[3:5]
-    Mireal = int(Mireal)
-
-    sp.speak(f"Done, alarm is set for {Timing}")
-
+    sp.speak("Ma'am done, Alarm is Set.")
     while True:
-        if Mireal == datetime.datetime.now().hour:
-            if Mireal == datetime.datetime.now().minute:
-                sp.speak("Alarm is running")
-                winsound.PlaySound('abc', winsound.SND_LOOP)
+        altime = datetime.datetime.now()
+        now = altime.strftime("%H:%M")
 
-            elif Mireal < datetime.datetime.now().minute:
-                break
+        if now == Timing:
+            media = vlc.MediaPlayer('C:\\Users\\Aysha Simra\\PycharmProject\\aiva\Alarm-ringtone.mp3')
+            media.play()
+
+        elif now > Timing:
+            break
 
 
-if __name__ == "__main__":
-    alarm("14:02 pm")

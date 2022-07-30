@@ -94,6 +94,3 @@ def GoogleMaps(place):
 
     sp.speak(target)
     sp.speak(f"Ma'am, {place} is {distance} kilometer away from your Location")
-
-if __name__ == "__main__":
-    GoogleMaps("bhatkal")
