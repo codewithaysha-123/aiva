@@ -30,6 +30,7 @@ from doxc import *
 from excel import *
 from nasa import *
 
+import pyautogui
 
 # to wish
 def wishMe():
@@ -54,7 +55,13 @@ def TaskExe():
 
     # password verification
     speak("For doing further tasks you need to enter password!!")
-    passprotect = pwinput.pwinput(prompt='Enter Password:', mask='.')
+    passprotect = pyautogui.password(text='Enter Password', title='Auth', default='', mask='*')
+    '''
+        pwinput will mask the user-input only in terminal/command-prompt. 
+        It'll not mask the input in IDE
+        So, I just replaced the pwinput.input with pyautogui.
+        It'll prompt an dialog for user-input.
+    '''
     passpro(passprotect)
 
     while True:
