@@ -26,3 +26,5 @@ def GoogleSearch(term):
 
 
 
+if __name__ == "__main__":
+    GoogleSearch("")

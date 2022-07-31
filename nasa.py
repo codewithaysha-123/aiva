@@ -22,4 +22,4 @@ def summary(body):
         sp.speak("No Data Available, Try Again Later!!")
 
 if __name__ == "__main__":
-    summary('earth')
+    summary("satellite")

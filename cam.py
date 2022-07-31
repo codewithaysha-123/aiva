@@ -5,7 +5,6 @@ import speak as sp
 import pyautogui
 import numpy as np
 import time
-from pytesseract import Output
 from keyboard import press_and_release
 import pytesseract
 

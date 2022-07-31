@@ -5,26 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f4211a-c9e9-4fbc-81b6-d4503f8fc1eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/aiva.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aiva.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyAlarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyAlarm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiva.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiva.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aivaui.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivaui.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cam.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid.py" beforeDir="false" afterPath="$PROJECT_DIR$/covid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictate.py" beforeDir="false" afterPath="$PROJECT_DIR$/dictate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google.py" beforeDir="false" afterPath="$PROJECT_DIR$/google.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hide.py" beforeDir="false" afterPath="$PROJECT_DIR$/hide.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intbat.py" beforeDir="false" afterPath="$PROJECT_DIR$/intbat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loctemp.py" beforeDir="false" afterPath="$PROJECT_DIR$/loctemp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insta.py" beforeDir="false" afterPath="$PROJECT_DIR$/insta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nasa.py" beforeDir="false" afterPath="$PROJECT_DIR$/nasa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/password.py" beforeDir="false" afterPath="$PROJECT_DIR$/password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news.py" beforeDir="false" afterPath="$PROJECT_DIR$/news.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sendemail.py" beforeDir="false" afterPath="$PROJECT_DIR$/sendemail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twilllo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/windows.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/youTube.py" beforeDir="false" afterPath="$PROJECT_DIR$/youTube.py" afterDir="false" />
     </list>
@@ -90,7 +81,7 @@
       <recent name="C:\Users\Aysha Simra\PycharmProject\jarvis\trainer" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.aiva">
+  <component name="RunManager" selected="Python.google">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,6 +124,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="aiva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,7 +166,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dictate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="google" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,7 +178,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dictate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/google.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,7 +208,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nasa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="windows" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,28 +220,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nasa.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="password" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="aiva" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/password.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/windows.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,18 +232,18 @@
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.aiva" />
-      <item itemvalue="Python.dictate" />
-      <item itemvalue="Python.nasa" />
-      <item itemvalue="Python.password" />
+      <item itemvalue="Python.calc" />
       <item itemvalue="Python.cam" />
+      <item itemvalue="Python.google" />
+      <item itemvalue="Python.windows" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.aiva" />
+        <item itemvalue="Python.google" />
         <item itemvalue="Python.cam" />
-        <item itemvalue="Python.nasa" />
-        <item itemvalue="Python.password" />
-        <item itemvalue="Python.dictate" />
+        <item itemvalue="Python.calc" />
+        <item itemvalue="Python.aiva" />
+        <item itemvalue="Python.windows" />
       </list>
     </recent_temporary>
   </component>

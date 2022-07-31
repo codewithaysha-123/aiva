@@ -16,5 +16,7 @@ def news():
         head.append(ar["title"])
 
     for i in range(len(head)):
-        sp.speak(i+1,head[i])
+        sp.speak(f"{i+1}.{head[i]}")
 
+if __name__ == "__main__":
+    news()

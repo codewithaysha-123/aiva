@@ -23,4 +23,5 @@ def instadown():
     else:
         pass
 
-
+if __name__ == "__main__":
+    instadown()

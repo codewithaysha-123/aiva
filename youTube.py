@@ -64,4 +64,4 @@ def YouTubesc(term):
                 sp.speak('No Commands')
 
 if __name__ == "__main__":
-    YouTube("mufti menk")
+    YouTube("python")

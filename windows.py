@@ -13,7 +13,7 @@ def windowsAuto(command):
         press_and_release('windows + m')
 
     elif 'show start' in query:
-        press('windows')
+        press_and_release('windows')
 
     elif 'open setting' in query:
         press_and_release('windows + i')

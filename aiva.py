@@ -31,7 +31,7 @@ from nasa import *
 
 # to wish
 def wishMe():
-    hour = int(datetime.now().hour)
+    hour =int(datetime.now().hour)
     now = datetime.now()
     time = now.strftime("%H:%M:%S")
     if hour >= 0 and hour <= 12:
@@ -231,7 +231,7 @@ def TaskExe():
             news()
 
         elif "set alarm" in query:
-            speak("Ma'am please tell me the time to set alarm, for example, set alarm to 5:30 am")
+            speak("Ma'am please tell me the time to set alarm in 24 hour format")
             tt = takeCommand()
             tt = tt.replace("set alarm to", "")
             tt = tt.replace(".", "")
