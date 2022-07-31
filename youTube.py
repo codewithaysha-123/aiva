@@ -1,9 +1,7 @@
 import webbrowser as web
 from time import sleep
-
 from keyboard import press_and_release
 from pyautogui import press, click, write
-
 import speak as sp
 import pywhatkit
 
@@ -11,13 +9,7 @@ def YouTube(term):
     result = "https://www.youtube.com/results?search_query=" + term
     web.open(result)
     sp.speak("This is what i Found your Search Ma'am!!")
-
     pywhatkit.playonyt(term)
-    sp.speak("This May also Help you Ma'am")
-    sp.speak("This is what i Found your Search Ma'am!!")
-
-    pywhatkit.playonyt(term)
-    sp.speak("This May also Help you Ma'am")
 
 def YouTubesc(term):
 
@@ -71,4 +63,5 @@ def YouTubesc(term):
             else:
                 sp.speak('No Commands')
 
-
+if __name__ == "__main__":
+    YouTube("mufti menk")

@@ -16,7 +16,10 @@ def summary(body):
     Data = r.json()
 
     if len(Data) != 0:
-        D =  Data['definition']
+        D = Data['definition']
         sp.speak(f"According To NASA {D}")
     else:
         sp.speak("No Data Available, Try Again Later!!")
+
+if __name__ == "__main__":
+    summary('earth')

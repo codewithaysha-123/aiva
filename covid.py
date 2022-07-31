@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import notification
 import requests
 import speak as sp
 
@@ -23,5 +22,3 @@ def cases():
 
     sp.speak("Here are the stats for COVID-19")
 
-if __name__ == "__main__":
-    cases()

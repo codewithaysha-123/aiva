@@ -31,9 +31,3 @@ def sendEmail(to, content):
     server.login(email, password)
     server.sendmail(email, to, content)
     server.close()
-
-
-
-
-if __name__ == "__main__":
-    sendEmail()

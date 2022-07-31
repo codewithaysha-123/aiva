@@ -2,7 +2,6 @@ import sys
 from datetime import datetime
 import re
 from dictate import Notepad
-from speak import *
 from sendemail import *
 import pwinput
 import pyjokes
@@ -22,7 +21,6 @@ from loctemp import *
 from news import news
 from password import passpro
 from pdf import *
-from twilllo import *
 from whatsapp import *
 from youTube import *
 from pptx import *
@@ -30,7 +28,6 @@ from doxc import *
 from excel import *
 from nasa import *
 
-import pyautogui
 
 # to wish
 def wishMe():
@@ -55,13 +52,7 @@ def TaskExe():
 
     # password verification
     speak("For doing further tasks you need to enter password!!")
-    passprotect = pyautogui.password(text='Enter Password', title='Auth', default='', mask='*')
-    '''
-        pwinput will mask the user-input only in terminal/command-prompt. 
-        It'll not mask the input in IDE
-        So, I just replaced the pwinput.input with pyautogui.
-        It'll prompt an dialog for user-input.
-    '''
+    passprotect = pwinput.pwinput(prompt='Enter Password: ', mask='.')
     passpro(passprotect)
 
     while True:
@@ -190,7 +181,6 @@ def TaskExe():
 
             try:
                 GoogleSearch(cm)
-                GoogleImage()
                 speak("I have Downloaded Some Images, I hope You Like it!!")
 
             except:
@@ -223,12 +213,6 @@ def TaskExe():
             speak(f"Ma'am, Making Video Call to {name}")
             whatscall(name)
             speak("Video Call has been ended...")
-
-        elif "make call" in query:
-            calls()
-
-        elif "send sms" in query:
-            mess()
 
         elif 'play' in query:
             speak("Wait Ma'am, Opening the Best Videos For You!!!")
