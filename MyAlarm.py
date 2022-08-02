@@ -1,5 +1,5 @@
 import datetime
-import vlc
+from playsound import playsound #pip install playsound==1.2.2
 import speak as sp
 
 def alarm(Timing):
@@ -9,8 +9,7 @@ def alarm(Timing):
         now = altime.strftime("%H:%M")
 
         if now == Timing:
-            media = vlc.MediaPlayer('C:\\Users\\Aysha Simra\\PycharmProject\\aiva\Alarm-ringtone.mp3')
-            media.play()
+            playsound("Alarm-ringtone.mp3")
 
         elif now > Timing:
             break
