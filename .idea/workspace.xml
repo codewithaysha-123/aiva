@@ -7,29 +7,6 @@
     <list default="true" id="e2f4211a-c9e9-4fbc-81b6-d4503f8fc1eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyAlarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyAlarm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NASA Img/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiva.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiva.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aivast.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cam.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hide.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nasa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sendemail.py" beforeDir="false" afterPath="$PROJECT_DIR$/sendemail.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +70,7 @@
       <recent name="C:\Users\Aysha Simra\PycharmProject\jarvis\trainer" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.nasa">
+  <component name="RunManager" selected="Python.MyAlarm">
     <configuration name="MyAlarm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -251,8 +228,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.nasa" />
         <item itemvalue="Python.MyAlarm" />
+        <item itemvalue="Python.nasa" />
         <item itemvalue="Python.cam" />
         <item itemvalue="Python.calc" />
         <item itemvalue="Python.aiva" />
