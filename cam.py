@@ -75,4 +75,4 @@ def imagetext():
 
 
 if __name__ == "__main__":
-    imagetext()
+    switwind()

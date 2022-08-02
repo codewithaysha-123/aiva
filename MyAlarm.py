@@ -9,7 +9,7 @@ def alarm(Timing):
         now = altime.strftime("%H:%M")
 
         if now == Timing:
-            media = vlc.MediaPlayer('C:\\Users\\Aysha Simra\\PycharmProject\\aiva\Alarm-ringtone.mp3')
+            media = vlc.MediaPlayer('C:\\Users\\Aysha Simra\\PycharmProject\\aiva\\Alarm-ringtone.mp3')
             media.play()
 
         elif now > Timing:
@@ -17,4 +17,4 @@ def alarm(Timing):
 
 
 if __name__ == "__main__":
-    alarm("11:23")
+    alarm("23:12")

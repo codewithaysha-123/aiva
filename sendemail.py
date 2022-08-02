@@ -1,3 +1,4 @@
+import pyautogui
 import yagmail
 import smtplib
 import speak as sp
@@ -5,7 +6,7 @@ import pwinput
 
 def sendFile():
     sender = input("Enter your email: ")
-    password = pwinput.pwinput(prompt='Enter your password: ', mask='.')
+    password = pyautogui.password(text='Enter Password', title='Auth', default='', mask='*')
     sp.speak("Ma'am To whom should i send email...")
     receiver = input("Enter receiver email id: ")
     ccname = input("Enter cc: ")
@@ -27,10 +28,7 @@ def sendEmail(to, content):
     server.ehlo()
     server.starttls()
     email = input("Enter your email: ")
-    password = pwinput.pwinput(prompt='Enter your password: ', mask='.')
+    password = pyautogui.password(text='Enter Password', title='Auth', default='', mask='*')
     server.login(email, password)
     server.sendmail(email, to, content)
     server.close()
-
-if __name__ == "__main__":
-    sendEmail("mahigeeks","This is done by aiva nice to meet you")
