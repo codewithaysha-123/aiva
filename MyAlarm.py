@@ -9,11 +9,11 @@ def alarm(Timing):
         now = altime.strftime("%H:%M")
 
         if now == Timing:
-            playsound("Alarm-ringtone.mp3")
+            playsound("Alarm-ringtone.mp3",False)
 
         elif now > Timing:
             break
 
 
 if __name__ == "__main__":
-    alarm("13:30")
+    alarm("17:08")
