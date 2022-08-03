@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f4211a-c9e9-4fbc-81b6-d4503f8fc1eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NASA Img/2022-07-29_SOFIA's_Southern_Lights.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nasa.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alarm-ringtone.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MyAlarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyAlarm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aivast.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivast.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
