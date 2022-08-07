@@ -1,5 +1,4 @@
 import sys
-from datetime import datetime
 import re
 from dictate import Notepad
 from sendemail import *
@@ -13,7 +12,6 @@ from cam import *
 from chrome import chrome
 from covid import *
 from google import *
-from hide import *
 from intbat import *
 from insta import *
 from loctemp import *
@@ -187,7 +185,6 @@ def TaskExe():
 
             try:
                 GoogleSearch(cm)
-                speak("I have Downloaded Some Images, I hope You Like it!!")
 
             except:
                 speak("No Proper Data Available!!")
@@ -295,9 +292,6 @@ def TaskExe():
         elif 'docx to pdf converter' in query:
             doxc2pdf()
 
-        elif 'pdf to pptx converter' in query:
-            pdf2pptx()
-
         elif 'pptx to pdf converter' in query:
             pptx2pdf()
 
@@ -309,12 +303,6 @@ def TaskExe():
 
         elif 'take a screenshot' in query:
             screen()
-
-        elif 'read pdf' in query:
-            pdf_reader()
-
-        elif 'hide files' in query or 'hide folder' in query or 'visible to everyone' in query:
-            hide()
 
         elif 'convert image to text' in query:
             speak("Wait ma'am, processing to fetch image for conversion!!")
@@ -334,9 +322,7 @@ def TaskExe():
             Notepad()
 
         elif 'nasa' in query:
-            speak("Ma'am tell me what are you looking to explore?")
-            body = takeCommand()
-            summary(body)
+            nasainfo()
 
 
 if __name__ == "__main__":
@@ -367,8 +353,7 @@ if __name__ == "__main__":
 
         ret, img = camer.read()  # read the frames using the above created object
 
-        converted_image = cv2.cvtColor(img,
-                                       cv2.COLOR_BGR2GRAY)  # The function converts an input image from one color space to another
+        converted_image = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)  # The function converts an input image from one color space to another
 
         faces = faceCascade.detectMultiScale(
             converted_image,

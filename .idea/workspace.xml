@@ -5,10 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f4211a-c9e9-4fbc-81b6-d4503f8fc1eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/NASA Img/2022-07-30_The_Eagle_Rises.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NASA Img/2022-07-31_Starburst_Galaxy_M94_from_Hubble.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NASA Img/2022-08-01_Mountains_of_Dust_in_the_Carina_Nebula.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NASA Img/2022-08-02_A_Moon_Dressed_Like_Saturn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NASA Img/2022-08-03_Halo_of_the_Cat's_Eye.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alarm-ringtone.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyAlarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyAlarm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NASA Img/2022-07-29_SOFIA's_Southern_Lights.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiva.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiva.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aivast.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivast.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aivaui.html" beforeDir="false" afterPath="$PROJECT_DIR$/aivaui.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictate.py" beforeDir="false" afterPath="$PROJECT_DIR$/dictate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxc.py" beforeDir="false" afterPath="$PROJECT_DIR$/doxc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google.py" beforeDir="false" afterPath="$PROJECT_DIR$/google.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i want test-note.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artificialintelligence-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artificialintelligence-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artificialintelligence-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artificialintelligence-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artificialintelligence-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artificialintelligence-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nasa.py" beforeDir="false" afterPath="$PROJECT_DIR$/nasa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pptx.py" beforeDir="false" afterPath="$PROJECT_DIR$/pptx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendemail.py" beforeDir="false" afterPath="$PROJECT_DIR$/sendemail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speak.py" beforeDir="false" afterPath="$PROJECT_DIR$/speak.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,28 +95,7 @@
       <recent name="C:\Users\Aysha Simra\PycharmProject\jarvis\trainer" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyAlarm">
-    <configuration name="MyAlarm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="aiva" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyAlarm.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.aiva">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="google" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,28 +150,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="aiva" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/google.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nasa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pdf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiva" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -211,7 +192,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nasa.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pdf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pptx" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="aiva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pptx.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="whatsapp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="aiva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Aysha Simra\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/whatsapp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,19 +245,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.MyAlarm" />
-      <item itemvalue="Python.nasa" />
+      <item itemvalue="Python.google" />
       <item itemvalue="Python.aiva" />
-      <item itemvalue="Python.calc" />
-      <item itemvalue="Python.cam" />
+      <item itemvalue="Python.pptx" />
+      <item itemvalue="Python.whatsapp" />
+      <item itemvalue="Python.pdf" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MyAlarm" />
-        <item itemvalue="Python.nasa" />
-        <item itemvalue="Python.cam" />
-        <item itemvalue="Python.calc" />
         <item itemvalue="Python.aiva" />
+        <item itemvalue="Python.google" />
+        <item itemvalue="Python.whatsapp" />
+        <item itemvalue="Python.pdf" />
+        <item itemvalue="Python.pptx" />
       </list>
     </recent_temporary>
   </component>
@@ -252,11 +275,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="55c6bb04-a1b2-4ab4-8555-dacb9d5e32b2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Aysha Simra/PycharmProject/aiva/images" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="55c6bb04-a1b2-4ab4-8555-dacb9d5e32b2" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
@@ -270,28 +323,38 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aiva.py</url>
-          <line>211</line>
+          <line>208</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aiva.py</url>
-          <line>264</line>
+          <line>261</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aiva.py</url>
-          <line>103</line>
+          <line>101</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aiva.py</url>
-          <line>256</line>
+          <line>253</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aiva.py</url>
-          <line>222</line>
+          <line>219</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aiva.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aiva.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

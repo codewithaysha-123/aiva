@@ -1,8 +1,8 @@
 from win32com import client
-from speak import speak as sp
+from speak import *
 
 def exe2pdf():
-    sp.speak("Ma'am, fetching for processing!!")
+    speak("Ma'am, fetching for processing!!")
     app = client.DispatchEx("Excel.Application")
     app.interactive = False
     app.Visible = False
@@ -13,4 +13,7 @@ def exe2pdf():
     workbook.ActiveSheet.ExportAsFixedFormat(0, path)
     workbook.Close()
 
-    sp.speak("Ma'am, file is converted!!")
+    speak("Ma'am, file is converted!!")
+
+if __name__ == "__main__":
+    exe2pdf()

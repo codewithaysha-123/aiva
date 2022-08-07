@@ -9,5 +9,6 @@ def doxc2pdf():
     convert(name, output)
     speak("Ma'am, file has been converted.")
 
-
+if __name__ == "__main__":
+    doxc2pdf()
 

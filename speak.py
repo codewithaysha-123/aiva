@@ -1,6 +1,6 @@
 import pyttsx3
 import speech_recognition as sr
-from googletrans import Translator
+from translate import Translator
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -50,10 +50,9 @@ def takeHindi():
 def transhin():
     speak("Ma'am, Tell me the line!!")
     line = takeHindi()
-    translate = Translator()
-    result = translate.translate(line, src='hi', dest='en')
-    Text = result.text
-    speak(f"Ma'am, Translation for this line {Text}")
+    translate = Translator(from_lang="hindi",to_lang="english")
+    result = translate.translate(line)
+    speak(f"Ma'am, Translation for this line {result}")
 
 def takeKannada():
     r = sr.Recognizer()
@@ -74,11 +73,10 @@ def takeKannada():
 
 def transkann():
     speak("Ma'am, Tell me the line!!")
-    line = takeKannada()
-    translate = Translator()
-    result = translate.translate(line, src='kn', dest='en')
-    Text = result.text
-    speak(f"Ma'am, Translation for this line {Text}")
+    line = takeHindi()
+    translate = Translator(from_lang="kannada", to_lang="english")
+    result = translate.translate(line)
+    speak(f"Ma'am, Translation for this line {result}")
 
 def takeTamil():
     r = sr.Recognizer()
@@ -99,11 +97,10 @@ def takeTamil():
 
 def tranTamil():
     speak("Ma'am, Tell me the line!!")
-    line = takeTamil()
-    translate = Translator()
-    result = translate.translate(line, src='ta', dest='en')
-    Text = result.text
-    speak(f"Ma'am, Translation for this line {Text}")
+    line = takeHindi()
+    translate = Translator(from_lang="tamil", to_lang="english")
+    result = translate.translate(line)
+    speak(f"Ma'am, Translation for this line {result}")
 
 def takeTelugu():
     r = sr.Recognizer()
@@ -124,11 +121,10 @@ def takeTelugu():
 
 def tranTelugu():
     speak("Ma'am, Tell me the line!!")
-    line = takeTelugu()
-    translate = Translator()
-    result = translate.translate(line ,src='te' ,dest='en')
-    Text = result.text
-    speak(f"Ma'am, Translation for this line {Text}")
+    line = takeHindi()
+    translate = Translator(from_lang="telugu", to_lang="english")
+    result = translate.translate(line)
+    speak(f"Ma'am, Translation for this line {result}")
 
 def takeArabic():
     r = sr.Recognizer()
@@ -149,9 +145,10 @@ def takeArabic():
 
 def tranArabic():
     speak("Ma'am, Tell me the line!!")
-    line = takeArabic()
-    translate = Translator()
-    result = translate.translate(line, src='ar', dest='en')
-    Text = result.text
-    speak(f"Ma'am, Translation for this line {Text}")
+    line = takeHindi()
+    translate = Translator(from_lang="Arabic", to_lang="english")
+    result = translate.translate(line)
+    speak(f"Ma'am, Translation for this line {result}")
 
+if __name__ == "__main__":
+    transhin()

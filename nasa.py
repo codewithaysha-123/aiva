@@ -3,7 +3,8 @@ import nasapy
 import os
 import pandas as pd
 import urllib.request
-from IPython.display import Image,display
+from IPython.display import Image, display
+import random
 from speak import *
 
 def nasainfo():
@@ -40,18 +41,8 @@ def nasainfo():
         # Downloading the image:
         urllib.request.urlretrieve(img['hdurl'],os.path.join(image_dir, title))
 
-    speak("Still processing please wait for few minutes...")
+    speak("Collected the images from Nasa!!")
 
-    # Get a list of images:
-    astro_images = os.listdir(image_dir)
-
-    # Displaying an image:
-    Image(os.path.join(image_dir, astro_images[0]))
-
-    # Get random image:
-    import random
-    Image(os.path.join(image_dir, astro_images[random.randint(0, len(astro_images) - 1)]))
-    speak("Ma'am wait fetching the images!!")
 
 if __name__ == "__main__":
     nasainfo()

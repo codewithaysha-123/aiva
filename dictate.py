@@ -1,4 +1,3 @@
-import os
 from speak import *
 
 def Notepad():

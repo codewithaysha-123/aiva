@@ -2,7 +2,6 @@ import pyautogui
 import yagmail
 import smtplib
 import speak as sp
-import pwinput
 
 def sendFile():
     sender = input("Enter your email: ")
@@ -32,3 +31,6 @@ def sendEmail(to, content):
     server.login(email, password)
     server.sendmail(email, to, content)
     server.close()
+
+if __name__ == "__main__":
+    sendFile()
