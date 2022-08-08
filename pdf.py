@@ -1,4 +1,4 @@
-
+import textract
 import speak as sp
 from pdf2docx import Converter
 
@@ -15,6 +15,12 @@ def pdf2docx():
     c.close
 
     sp.speak("ma'am, file has been saved!!")
+
+def readpdf():
+    sp.speak("Ma'am, Which file should i read?")
+    path = input("Enter the file path: ")
+    PDF_read = textract.process(path, method='PDFminer')
+    sp.speak(PDF_read)
 
 
 

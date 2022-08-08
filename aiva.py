@@ -324,6 +324,9 @@ def TaskExe():
         elif 'nasa' in query:
             nasainfo()
 
+        elif 'read pdf' in query:
+            readpdf()
+
 
 if __name__ == "__main__":
 
