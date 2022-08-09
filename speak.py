@@ -1,7 +1,7 @@
-import goslate as goslate
+#import goslate as goslate
 import pyttsx3
 import speech_recognition as sr
-import goslate
+#import goslate
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -51,8 +51,8 @@ def takeHindi():
 def transhin():
     speak("Ma'am, Tell me the line!!")
     line = takeHindi()
-    gs = goslate.Goslate()
-    speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
+    #gs = goslate.Goslate()
+    #speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
 
 def takeKannada():
     r = sr.Recognizer()
@@ -74,8 +74,8 @@ def takeKannada():
 def transkann():
     speak("Ma'am, Tell me the line!!")
     line = takeKannada()
-    gs = goslate.Goslate()
-    speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
+    #gs = goslate.Goslate()
+    #speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
 
 def takeTamil():
     r = sr.Recognizer()
@@ -97,8 +97,8 @@ def takeTamil():
 def tranTamil():
     speak("Ma'am, Tell me the line!!")
     line = takeTamil()
-    gs = goslate.Goslate()
-    speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
+    #gs = goslate.Goslate()
+    #speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
 
 def takeTelugu():
     r = sr.Recognizer()
@@ -120,8 +120,8 @@ def takeTelugu():
 def tranTelugu():
     speak("Ma'am, Tell me the line!!")
     line = takeTelugu()
-    gs = goslate.Goslate()
-    speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
+    #gs = goslate.Goslate()
+    #speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
 
 def takeArabic():
     r = sr.Recognizer()
@@ -143,8 +143,8 @@ def takeArabic():
 def tranArabic():
     speak("Ma'am, Tell me the line!!")
     line = takeTelugu()
-    gs = goslate.Goslate()
-    speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
+    #gs = goslate.Goslate()
+    #speak(f"Ma'am, Translation for this line {gs.translate(line, 'en')}")
 
 if __name__ == "__main__":
     transhin()
