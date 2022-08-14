@@ -18,5 +18,3 @@ def news():
     for i in range(len(head)):
         sp.speak(f"{i+1}.{head[i]}")
 
-if __name__ == "__main__":
-    news()

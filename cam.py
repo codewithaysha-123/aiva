@@ -1,6 +1,5 @@
 import cv2
 from PIL import Image
-
 import speak as sp
 import pyautogui
 import numpy as np
@@ -73,6 +72,3 @@ def imagetext():
     text = pytesseract.image_to_string(im, lang='eng')
     sp.speak(text)
 
-
-if __name__ == "__main__":
-    switwind()

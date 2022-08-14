@@ -1,5 +1,4 @@
 from keyboard import press_and_release
-from keyboard import press
 import speak
 
 
@@ -31,5 +30,3 @@ def windowsAuto(command):
         speak.speak("Sorry, Ma'am No Command Found!")
 
 
-if __name__ == "__main__":
-    windowsAuto('show start')

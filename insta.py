@@ -1,3 +1,5 @@
+import pyautogui
+
 import speak as sp
 import webbrowser
 import time
@@ -5,7 +7,7 @@ import instaloader as insta
 
 def instadown():
     sp.speak("Ma'am please enter the username correctly...")
-    name = input("Enter username here: ")
+    name = pyautogui.prompt("Enter username here: ")
 
     webbrowser.open(f"www.instagram.com/{name}")
     sp.speak("Ma'am here is the profile of the user {name}")
@@ -23,5 +25,4 @@ def instadown():
     else:
         pass
 
-if __name__ == "__main__":
-    instadown()
+

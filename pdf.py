@@ -1,10 +1,12 @@
 import PyPDF2
+import pyautogui
+
 import speak as sp
 from pdf2docx import Converter
 
 def pdf2docx():
     sp.speak("Say the name of the file you would like to convert")
-    inputpath = str(input("Enter the correct File path:"))
+    inputpath = pyautogui.prompt("Enter the correct File path:")
 
     sp.speak("Ma'am, file is been converted.")
     save =inputpath.split(".")
@@ -18,7 +20,7 @@ def pdf2docx():
 
 def readpdf():
     sp.speak("Ma'am, Which file should i read?")
-    path = input("Enter the file path: ")
+    path = pyautogui.prompt("Enter the file path: ")
 
     # creating a pdf file object
     pdfFileObj = open(path, 'rb')
@@ -39,6 +41,4 @@ def readpdf():
     pdfFileObj.close()
 
 
-if __name__ == "__main__":
-    readpdf()
 

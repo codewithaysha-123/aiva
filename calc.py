@@ -21,11 +21,11 @@ def calculate():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         speak("Say what you want to calculate, example: 3 plus 3")
-        print("listening...")
+        speak("listening...")
         r.adjust_for_ambient_noise(source)
         audio = r.listen(source)
         my_string = r.recognize_google(audio)
-        print(my_string)
+        speak(my_string)
 
         def get_operator_fn(op):
             return {
@@ -43,5 +43,4 @@ def calculate():
         speak("Your result is ")
         speak(eval_binary_expr(*(my_string.split())))
 
-if __name__ == "__main__":
-    calculate()
+

@@ -9,6 +9,3 @@ def Notepad():
     filename = str(time) + "-note.txt"
     with open(filename, "w") as file:
         file.write(writes)
-
-if __name__ == "__main__":
-    Notepad()

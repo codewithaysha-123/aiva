@@ -42,5 +42,3 @@ def nasainfo():
     speak("Collected the images from Nasa!!")
 
 
-if __name__ == "__main__":
-    nasainfo()

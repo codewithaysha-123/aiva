@@ -1,5 +1,4 @@
 import sys
-import re
 from remember import *
 from dictate import Notepad
 from sendemail import *
@@ -24,8 +23,6 @@ from pptx import *
 from doxc import *
 from excel import *
 from nasa import *
-
-
 
 # to wish
 def wishMe():
@@ -125,23 +122,6 @@ def TaskExe():
 
         elif 'camera' in query:
             camera()
-
-        elif 'translator' in query:
-            speak("Wait Ma'am, processing for translation!!")
-            if "hindi" in query:
-                transhin()
-
-            elif "kannada" in query:
-                transkann()
-
-            elif "tamil" in query:
-                tranTamil()
-
-            elif "telugu" in query:
-                tranTelugu()
-
-            elif "arabic" in query:
-                tranArabic()
 
         elif 'ip address' in query:
             ip = get("https://api.ipify.org").text

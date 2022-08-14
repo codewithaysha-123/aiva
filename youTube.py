@@ -64,6 +64,3 @@ def YouTubesc(term):
         else:
             sp.speak('No Commands')
 
-
-if __name__ == "__main__":
-    YouTube("python")

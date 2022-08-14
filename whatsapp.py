@@ -36,6 +36,3 @@ def whatsvcall(name):
     write(name)
     sleep(1)
     click(x=1663, y=60)
-
-if __name__ == "__main__":
-    whatsvcall("mama")

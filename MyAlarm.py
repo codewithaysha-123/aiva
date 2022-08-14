@@ -15,6 +15,5 @@ def alarm(Timing):
             break
 
 
-if __name__ == "__main__":
-    alarm("12:48")
+
 

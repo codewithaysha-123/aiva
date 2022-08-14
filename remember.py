@@ -19,5 +19,3 @@ def jokesen():
     jokes = pyjokes.get_joke(language='en', category='neutral')
     speak(jokes)
 
-if __name__ == "__main__":
-    jokesen()

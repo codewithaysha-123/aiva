@@ -24,6 +24,3 @@ def GoogleSearch(term):
 
     downloader.download(Query, limit=10, output_dir='dataset', adult_filter_off=True, force_replace=False,
                         timeout=60, verbose=True)
-
-if __name__ == "__main__":
-    GoogleSearch("artificial intelligence")
