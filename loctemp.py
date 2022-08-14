@@ -1,3 +1,4 @@
+import pyautogui
 from geopy.geocoders import Nominatim
 from geopy.distance import great_circle
 import geocoder
@@ -10,7 +11,7 @@ def temperature():
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
     sp.speak("Which city's temperature do you want to find")
-    city_name = input("Enter city name : ")
+    city_name = pyautogui.prompt("Enter city name : ")
 
     complete_url = base_url + "appid=" + api_key + "&q=" + city_name
     response = requests.get(complete_url)

@@ -3,8 +3,6 @@ import nasapy
 import os
 import pandas as pd
 import urllib.request
-from IPython.display import Image, display
-import random
 from speak import *
 
 def nasainfo():

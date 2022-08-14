@@ -1,8 +1,8 @@
 import sys
 import re
+from remember import *
 from dictate import Notepad
 from sendemail import *
-import pyjokes
 from requests import get
 from win10toast import ToastNotifier
 import MyAlarm
@@ -24,6 +24,7 @@ from pptx import *
 from doxc import *
 from excel import *
 from nasa import *
+
 
 
 # to wish
@@ -71,7 +72,7 @@ def TaskExe():
                 speak("Ok ma'am, closing command prompt")
                 os.system("TASKKILL /F /IM cmd.exe")
 
-        elif 'hello' or 'hi' in query:
+        elif 'hello' in query or 'hi' in query:
             speak("Hello ma'am, may i help you with something...")
 
         elif 'how are you' in query:
@@ -81,15 +82,10 @@ def TaskExe():
             speak("It\'s glad to hear that your fine...")
 
         elif "remember that" in query:
-            rememberMsg = query.replace("remember that", "")
-            speak("Ma'am, you tell me To remind that" + rememberMsg)
-            remember = open('Data.txt', 'w')
-            remember.write(rememberMsg)
-            remember.close()
+            rem()
 
         elif 'What do you remember' in query:
-            remember = open('Data.txt', 'r')
-            sp.speak("Ma'am, you told me that" + remember)
+            remember()
 
         elif 'notepad' in query:
             if 'open' in query:
@@ -117,10 +113,11 @@ def TaskExe():
             if 'open' in query:
                 speak("Ok Ma'am, Opening Chrome")
                 os.startfile('chrome.exe')
-                chrome(query)
             elif 'close' in query:
                 speak("Ok Ma'am, Closing Chrome")
                 os.system("TASKKILL /F /IM chrome.exe")
+            else:
+                chrome(query)
 
         elif 'youtube' in query:
             speak("Ok Ma'am tell me, what should i do? ")
@@ -152,11 +149,21 @@ def TaskExe():
 
         elif 'send email' in query:
             try:
-                speak("what should i say")
-                content = takeCommand()
-                to = input("Enter Sender email: ")
-                sendEmail(to, content)
-                speak("Email has been sent...")
+                def email():
+                    regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+                    to = pyautogui.prompt("Enter Sender email: ")
+                    speak("what should i say")
+                    content = takeCommand()
+                    if (re.fullmatch(regex, to)):
+                        pyautogui.alert("Valid Email")
+                        sendEmail(to, content)
+                        speak("Email has been sent...")
+
+                    else:
+                        pyautogui.alert("Invalid Email")
+                        email()
+                email()
+
 
             except Exception as e:
                 speak("sorry ma'am i am not able to send email...")
@@ -185,6 +192,7 @@ def TaskExe():
 
             try:
                 GoogleSearch(cm)
+                speak("I have Downloaded some images too, i hope you love it!!")
 
             except:
                 speak("No Proper Data Available!!")
@@ -206,7 +214,6 @@ def TaskExe():
             name = query
             speak(f"Ma'am, Making Call to {name}")
             whatscall(name)
-            speak("Call has been ended...")
 
         elif 'whatsapp video call' in query:
             query = query.replace("make ", "")
@@ -215,12 +222,10 @@ def TaskExe():
             name = query
             speak(f"Ma'am, Making Video Call to {name}")
             whatscall(name)
-            speak("Video Call has been ended...")
 
         elif 'play' in query:
             speak("Wait Ma'am, Opening the Best Videos For You!!!")
             YouTube(query)
-            speak("Ok Ma'am, Play Closed!!")
 
         elif "you can sleep now" in query:
             speak("Thanks for using me ma'am, have a good day... you can call me any time")
@@ -242,10 +247,7 @@ def TaskExe():
             MyAlarm.alarm(tt)
 
         elif 'tell me a joke' in query:
-            speak("Ok ma'am please wait searching the jokes to say...")
-            jokes = pyjokes.get_jokes(language='en', category='neutral')
-            random.choice(jokes)
-            speak(jokes)
+            jokesen()
 
         elif 'shutdown the system' in query:
             speak("Ok ma'am. shutting down the system.")
@@ -333,14 +335,13 @@ if __name__ == "__main__":
     recognizer = cv2.face.LBPHFaceRecognizer_create()  # Local Binary Patterns Histograms
     recognizer.read('trainer/trainer.yml')  # load trained model
     cascadePath = 'haarcascade_frontalface_default.xml'
-    faceCascade = cv2.CascadeClassifier(
-        cv2.data.haarcascades + cascadePath)  # initializing haar cascade for object detection approach
+    faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + cascadePath)  # initializing haar cascade for object detection approach
 
     font = cv2.FONT_HERSHEY_SIMPLEX  # denotes the font type
 
     id = 2  # number of persons you want to Recognize
 
-    names = ['', 'Hassan Sir', 'Aysha']  # names, leave first empty bcz counter starts from 0
+    names = ['', 'aysha', 'sir']  # names, leave first empty bcz counter starts from 0
 
     camer = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # cv2.CAP_DSHOW to remove warning
     camer.set(3, 640)  # set video FrameWidht

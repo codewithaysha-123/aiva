@@ -1,4 +1,3 @@
-from keyboard import press
 from keyboard import press_and_release
 import webbrowser as web
 
@@ -22,8 +21,7 @@ def chrome(command):
             press_and_release('ctrl + j')
 
         elif 'bookmark' in query:
-            press_and_release('ctrl + d')
-            press('enter')
+            press_and_release('ctrl + d + enter')
 
         elif 'incognito' in query:
             press_and_release('ctrl + shift + n')
@@ -51,16 +49,13 @@ def chrome(command):
             press_and_release('ctrl + shift')
 
         elif "minimize current window" in query:
-            press_and_release('Alt + space')
-            press('n')
+            press_and_release('Alt + space + n')
 
         elif "maximize current window" in query:
-            press_and_release('Alt + space')
-            press('x')
+            press_and_release('Alt + space + x')
 
         elif 'exit' in query:
-            press_and_release('alt + f')
-            press("x")
+            press_and_release('alt + f + x')
             break
 
 

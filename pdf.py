@@ -1,4 +1,4 @@
-import textract
+import PyPDF2
 import speak as sp
 from pdf2docx import Converter
 
@@ -19,9 +19,26 @@ def pdf2docx():
 def readpdf():
     sp.speak("Ma'am, Which file should i read?")
     path = input("Enter the file path: ")
-    PDF_read = textract.process(path, method='PDFminer')
-    sp.speak(PDF_read)
+
+    # creating a pdf file object
+    pdfFileObj = open(path, 'rb')
+
+    # creating a pdf reader object
+    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+
+    # printing number of pages in pdf file
+    sp.speak(pdfReader.numPages)
+
+    # creating a page object
+    pageObj = pdfReader.getPage(0)
+
+    # extracting text from page
+    sp.speak(pageObj.extractText())
+
+    # closing the pdf file object
+    pdfFileObj.close()
 
 
-
+if __name__ == "__main__":
+    readpdf()
 
