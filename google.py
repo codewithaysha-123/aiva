@@ -2,7 +2,7 @@ import pywhatkit
 import wikipedia
 import speak as sp
 from pywikihow import search_wikihow
-from bing_image_downloader import downloader
+import downloader
 
 def GoogleSearch(term):
     query = term.replace("aiva", "")

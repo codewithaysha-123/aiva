@@ -81,17 +81,17 @@ def GoogleMaps(place):
     target_latlon = location.latitude, location.longitude
     location = location.raw['address']
 
-    target = {'city': location.get('city',''),
-              'state': location.get('state',''),
-              'country': location.get('country','')}
+    target = {'city': location.get('city', ''),
+              'state': location.get('state', ''),
+              'country': location.get('country', '')}
 
     current_loca = geocoder.ip('me')
 
     current_latlon = current_loca.latlng
 
-    distance = str(great_circle(current_latlon,target_latlon))
-    distance = str(distance.split(' ',1)[0])
-    distance = round(float(distance),2)
+    distance = str(great_circle(current_latlon, target_latlon))
+    distance = str(distance.split(' ', 1)[0])
+    distance = round(float(distance), 2)
 
     sp.speak(target)
     sp.speak(f"Ma'am, {place} is {distance} kilometer away from your Location")

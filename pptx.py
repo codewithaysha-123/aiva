@@ -1,5 +1,4 @@
 import pyautogui
-
 from speak import speak
 import win32com.client
 import os
@@ -11,7 +10,7 @@ def pptx2pdf():
     powerpoint = win32com.client.Dispatch("Powerpoint.Application")
     pdf = powerpoint.Presentations.Open(in_file)
     speak("Ma'am,file has been converted.")
-    pdf.SaveAs(out_file,32)
+    pdf.SaveAs(out_file, 32)
     pdf.Close()
     powerpoint.Quit()
 

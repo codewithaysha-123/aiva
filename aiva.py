@@ -47,14 +47,8 @@ def TaskExe():
 
     # password verification
     speak("For doing further tasks you need to enter password!!")
-    # passprotect = pwinput.pwinput(prompt='Enter Password: ', mask='.')
     passprotect = pyautogui.password(text='Enter Password', title='Auth', default='', mask='*')
-    '''
-        pwinput will mask the user-input only in terminal/command-prompt. 
-        It'll not mask the input in IDE
-        So, I just replaced the pwinput.input with pyautogui.
-        It'll prompt an dialog for user-input.
-    '''
+   
     passpro(passprotect)
 
     while True:
@@ -309,25 +303,30 @@ def TaskExe():
         elif 'read pdf' in query:
             readpdf()
 
+        elif 'goodbye' in query:
+            speak("Thanks for Using Me Ma'am, have a great day...")
+            toast = ToastNotifier()
+            toast.show_toast("Aiva", "The Aiva is Now Deactivated!!!", duration=5)
+            sys.exit()
+
 
 if __name__ == "__main__":
 
-    recognizer = cv2.face.LBPHFaceRecognizer_create()  # Local Binary Patterns Histograms
-    recognizer.read('trainer/trainer.yml')  # load trained model
+    recognizer = cv2.face.LBPHFaceRecognizer_create() 
+    recognizer.read('trainer/trainer.yml')  
     cascadePath = 'haarcascade_frontalface_default.xml'
-    faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + cascadePath)  # initializing haar cascade for object detection approach
+    faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + cascadePath)  
 
-    font = cv2.FONT_HERSHEY_SIMPLEX  # denotes the font type
+    font = cv2.FONT_HERSHEY_SIMPLEX  
 
-    id = 2  # number of persons you want to Recognize
+    id = 2  
 
-    names = ['', 'aysha', 'sir']  # names, leave first empty bcz counter starts from 0
+    names = ['', 'aysha']  
 
-    camer = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # cv2.CAP_DSHOW to remove warning
-    camer.set(3, 640)  # set video FrameWidht
-    camer.set(4, 480)  # set video FrameHeight
+    camer = cv2.VideoCapture(0, cv2.CAP_DSHOW)  
+    camer.set(3, 640)  
+    camer.set(4, 480)  
 
-    # Define min window size to be recognized as a face
     minW = 0.1 * camer.get(3)
     minH = 0.1 * camer.get(4)
 
@@ -335,9 +334,9 @@ if __name__ == "__main__":
 
     while True:
 
-        ret, img = camer.read()  # read the frames using the above created object
+        ret, img = camer.read()  
 
-        converted_image = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)  # The function converts an input image from one color space to another
+        converted_image = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)   
 
         faces = faceCascade.detectMultiScale(
             converted_image,
@@ -348,11 +347,10 @@ if __name__ == "__main__":
 
         for (x, y, w, h) in faces:
 
-            cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)  # used to draw a rectangle on any image
+            cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)  
 
-            id, accuracy = recognizer.predict(converted_image[y:y + h, x:x + w])  # to predict on every single image
+            id, accuracy = recognizer.predict(converted_image[y:y + h, x:x + w])  
 
-            # Check if accuracy is less them 100 ==> "0" is perfect match
             if (accuracy < 100):
                 accuracy = "  {0}%".format(round(100 - accuracy))
                 permission = takeCommand()
@@ -376,11 +374,10 @@ if __name__ == "__main__":
 
         cv2.imshow('camera', img)
 
-        k = cv2.waitKey(10) & 0xff  # Press 'ESC' for exiting video
+        k = cv2.waitKey(10) & 0xff  
         if k == 13:
             break
 
-    # Do a bit of cleanup
     print("Thanks for using this program, have a good day.")
     camer.release()
     cv2.destroyAllWindows()

@@ -1,7 +1,5 @@
 import speak as sp
 import sys
-
-
 def passpro(inpas):
     passprotect = 'pr|ncess'
     passrec = str(inpas)

@@ -27,14 +27,14 @@ def chrome(command):
             press_and_release('ctrl + shift + n')
 
         elif 'switch tab' in query:
-            tab = query.replace('switch tab',"")
-            Tab = tab.replace("to","")
+            tab = query.replace('switch tab', "")
+            Tab = tab.replace("to", "")
             num = Tab
             bb = f'ctrl + {num}'
             press_and_release(bb)
 
         elif 'open' in query:
-            name = query.replace("open","")
+            name = query.replace("open", "")
             NameA = str(name)
             string = "https://www." + NameA + ".com"
             web.open(string)

@@ -1,7 +1,5 @@
 from keyboard import press_and_release
 import speak
-
-
 def windowsAuto(command):
     query = str(command)
 

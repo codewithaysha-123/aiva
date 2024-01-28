@@ -1,3 +1,5 @@
+from typing import TextIO
+
 from speak import *
 import pyjokes
 

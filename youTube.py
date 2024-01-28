@@ -15,52 +15,50 @@ def YouTube(term):
 
 def YouTubesc(term):
     query = str(term)
-    while (True):
-        if 'pause' in query:
-            press_and_release('space bar')
+    if 'pause' in query:
+        press_and_release('space bar')
 
-        elif 'resume' in query:
-            press_and_release('space bar')
+    elif 'resume' in query:
+        press_and_release('space bar')
 
-        elif 'full screen ' in query:
-            press_and_release('f')
+    elif 'full screen ' in query:
+        press_and_release('f')
 
-        elif 'film screen' in query:
-            press_and_release('t')
+    elif 'film screen' in query:
+        press_and_release('t')
 
-        elif 'skip' in query:
-            press_and_release('l')
+    elif 'skip' in query:
+        press_and_release('l')
 
-        elif 'back' in query:
-            press_and_release('j')
+    elif 'back' in query:
+        press_and_release('j')
 
-        elif 'increase' in query:
-            press_and_release('shift + .')
+    elif 'increase' in query:
+        press_and_release('shift + .')
 
-        elif 'decrease' in query:
-            press_and_release('shift + ,')
+    elif 'decrease' in query:
+        press_and_release('shift + ,')
 
-        elif 'previous' in query:
+    elif 'previous' in query:
+        press_and_release('shift + p')
 
-            press_and_release('shift + p')
+    elif 'next' in query:
+        press_and_release('shift + n')
 
-        elif 'next' in query:
-            press_and_release('shift + n')
+    elif 'search' in query:
+        click(x=597, y=133)
+        sp.speak("What should I Search Ma'am")
+        sea = sp.takeCommand()
+        write(sea)
+        sleep(1)
+        press('enter')
 
-        elif 'search' in query:
-            click(x=597, y=133)
+    elif 'mute' in query:
+        press_and_release('m')
 
-            sp.speak("What should I Search Ma'am")
-            sea = sp.takeCommand()
-            write(sea)
-            sleep(1)
-            press('enter')
-        elif 'mute' in query:
-            press_and_release('m')
+    elif 'unmute' in query:
+        press_and_release('m')
 
-        elif 'unmute' in query:
-            press_and_release('m')
-
-        else:
-            sp.speak('No Commands')
+    else:
+        sp.speak('No Commands')
 
