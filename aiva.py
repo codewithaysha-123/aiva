@@ -309,9 +309,7 @@ def TaskExe():
             toast.show_toast("Aiva", "The Aiva is Now Deactivated!!!", duration=5)
             sys.exit()
 
-
 if __name__ == "__main__":
-
     recognizer = cv2.face.LBPHFaceRecognizer_create() 
     recognizer.read('trainer/trainer.yml')  
     cascadePath = 'haarcascade_frontalface_default.xml'
