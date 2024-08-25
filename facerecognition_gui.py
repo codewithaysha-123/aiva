@@ -86,7 +86,7 @@ class FaceRecognition(QWidget):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Main Window")
+        self.setWindowTitle("Advanced Face Recognition Manager")
         self.setGeometry(100, 100, 640, 480)
         self.face_recognition_window = FaceRecognition()
         self.setCentralWidget(self.face_recognition_window)

@@ -23,7 +23,7 @@ def sendFile():
                     sub = sp.takeCommand()
                     sp.speak("Ma'am  what should i say")
                     body = sp.takeCommand()
-                    filename = 'D:\Simra\wallpaper\images.jfif'
+                    filename = 'C:\\Users\\HP\\Pictures\\Saved Pictures\\house-yard-render-laptop-r0wvdolwzm05zyr7.jpg'
                     # initializing the server connection
                     yag = yagmail.SMTP(user=sender, password=password)
                     # sending the email

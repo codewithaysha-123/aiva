@@ -6,7 +6,7 @@ from facerecognition_gui import FaceRecognition
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Main Window")
+        self.setWindowTitle("Aysha's Intelligent Virtual Assistant")
         self.layout = QVBoxLayout()
 
         self.password_button = QPushButton("Password")

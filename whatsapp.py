@@ -5,7 +5,7 @@ from keyboard import write
 from time import sleep
 
 def whatsmess(name, message):
-    startfile("C:\\Users\\Aysha Simra\\AppData\\Local\\WhatsApp\\WhatsApp.exe")
+    startfile("D:\\WindowsApps\\5319275A.WhatsAppDesktop_2.2433.3.0_x64__cv1g1gvanyjgm\\WhatsApp.exe")
     sleep(5)
     click(x=238, y=140)
     sleep(1)
@@ -20,7 +20,7 @@ def whatsmess(name, message):
     press('enter')
 
 def whatscall(name):
-    startfile("D:\\Simra\\Downloads\\WhatsAppSetup.exe")
+    startfile("D:\\WindowsApps\\5319275A.WhatsAppDesktop_2.2433.3.0_x64__cv1g1gvanyjgm\\WhatsApp.exe")
     sleep(5)
     click(x=238, y=140)
     sleep(1)
@@ -29,7 +29,7 @@ def whatscall(name):
     click(x=1731, y=65)
 
 def whatsvcall(name):
-    startfile("D:\\Simra\\Downloads\\WhatsAppSetup.exe")
+    startfile("D:\\WindowsApps\\5319275A.WhatsAppDesktop_2.2433.3.0_x64__cv1g1gvanyjgm\\WhatsApp.exe")
     sleep(5)
     click(x=238, y=140)
     sleep(1)
