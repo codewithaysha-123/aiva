@@ -29,21 +29,4 @@ def takeCommand():
         query = query.lower()
         return query
 
-def takeHindi():
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("Listening...")
-        r.pause_threshold = 1
-        audio = r.listen(source, timeout=5, phrase_time_limit=5)
-
-    try:
-        print("Recognizing...")
-        query = r.recognize_google(audio, language='hi')
-        print(f"User said: {query}")
-
-    except Exception as e:
-        return "None"
-    query = query.lower()
-    return query
-
 

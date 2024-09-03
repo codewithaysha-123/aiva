@@ -1,28 +1,36 @@
+import os
 import sys
-from remember import *
+import re
+import cv2
+import datetime
+import wikipedia
+import webbrowser as web
+from remember import rem, remember, jokesen
 from dictate import Notepad
-from sendemail import *
+from sendemail import sendFile, sendEmail
 from requests import get
 from win10toast import ToastNotifier
 import MyAlarm
+import pyautogui
 from windows import windowsAuto
-from calc import *
-from cam import *
+from calc import calculate
+from cam import camera, recsc, screen, switwind, imagetext
 from chrome import chrome
-from covid import *
-from google import *
-from intbat import *
-from insta import *
-from loctemp import *
+from covid import cases
+from google import GoogleSearch
+from intbat import bat
+from insta import instadown
+from loctemp import temperature, myloc, GoogleMaps
 from news import news
 from password import passpro
-from pdf import *
-from whatsapp import *
-from youTube import *
-from pptx import *
-from doxc import *
-from excel import *
-from nasa import *
+from pdf import pdf2docx, readpdf
+from whatsapp import whatsmess, whatscall, whatsvcall
+from youTube import YouTube, YouTubesc
+from pptx import pptx2pdf
+from doxc import doxc2pdf
+from excel import exe2pdf
+from nasa import nasainfo
+from speak import speak, takeCommand
 
 # to wish
 def wishMe():
@@ -98,7 +106,7 @@ def TaskExe():
             site = re.search(r'open (.*)', query)
             speak("Ok ma'am, opening the site")
             print(f"Opening:{site.group(1)}.com")
-            webbrowser.open(f"www.{site.group(1)}.com")
+            web.open(f"www.{site.group(1)}.com")
 
         elif 'chrome' in query:
             if 'open' in query:
@@ -195,7 +203,7 @@ def TaskExe():
             query = query.replace("to ", "")
             name = query
             speak(f"Ma'am, Making Video Call to {name}")
-            whatscall(name)
+            whatsvcall(name)
 
         elif 'play' in query:
             speak("Wait Ma'am, Opening the Best Videos For You!!!")

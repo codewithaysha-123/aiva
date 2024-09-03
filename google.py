@@ -2,7 +2,7 @@ import pywhatkit
 import wikipedia
 import speak as sp
 from pywikihow import search_wikihow
-import downloader
+from downloader import Downloader
 
 def GoogleSearch(term):
     query = term.replace("aiva", "")
@@ -22,5 +22,5 @@ def GoogleSearch(term):
         search = wikipedia.summary(Query, 2)
         sp.speak(f"According to your Search: {search}")
 
-    downloader.download(Query, limit=10, output_dir='dataset', adult_filter_off=True, force_replace=False,
+    Downloader(Query, limit=10, output_dir='dataset', adult_filter_off=True, force_replace=False,
                         timeout=60, verbose=True)

@@ -52,17 +52,4 @@ def authenticate_password():
         print("Password has not been set yet.")
         return False
 
-# Example usage
-def main():
-    # Set or reset password
-    set_password()
-    # Reset password
-    reset_password()
-    # Authenticate user
-    authenticated = authenticate_password()
-    if authenticated:
-        # Perform actions when authentication succeeds
-        print("Welcome to AIVA!")
-        TaskExe()
-
 

@@ -66,9 +66,7 @@ def switwind():
 def imagetext():
     sp.speak("ma'am, wait for processing the image!!")
     im = Image.open("image.jpg")
-
-    pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
-
+    
     text = pytesseract.image_to_string(im, lang='eng')
     sp.speak(text)
 

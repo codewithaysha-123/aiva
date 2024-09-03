@@ -2,7 +2,7 @@ from datetime import datetime
 import nasapy
 import os
 import pandas as pd
-import urllib.request
+import requests
 from speak import *
 
 def nasainfo():
@@ -28,17 +28,20 @@ def nasainfo():
             if 'hdurl' in apod.keys():
                 data.append({'date': apod['date'], 'title': apod['title'], 'hdurl': apod['hdurl']})
 
-    # Path of the directory:
     image_dir = "NASA Img"
 
-        # Retrieving the image:
     for img in data:
-        # Creating title for image:
         title = img["date"] + "_" + img["title"].replace(" ", "_").replace(":", "_") + ".jpg"
 
-        # Downloading the image:
-        urllib.request.urlretrieve(img['hdurl'],os.path.join(image_dir, title))
+        response = requests.get(img['hdurl'], stream=True)  # Use stream for larger images
 
+        if response.status_code == 200:
+            with open(os.path.join(image_dir, title), 'wb') as f:
+                for chunk in response.iter_content(1024):
+                    f.write(chunk)
+            print(f"Downloaded {title} successfully!")
+        else:
+            print(f"Failed to download {title} (status code: {response.status_code})")
     speak("Collected the images from Nasa!!")
 
 
